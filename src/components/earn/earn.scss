@@ -1,0 +1,84 @@
+@import '../../index.scss';
+
+.chain{
+    width: 100% !important;
+    margin-top: 30px;
+    padding: 20px 50px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.nav_title{
+    display: flex;
+    justify-content: space-between;
+    color: $secondary_text;
+}
+
+.logo_chain{
+    display: flex;
+    align-items: center;
+    img{
+        width: 50px;
+    }
+}
+
+.chain_info{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+
+}
+
+.hide_button{
+    display: none;
+    width: 100% !important;
+    margin-top: 20px !important;
+}
+
+
+.button{
+    color:$primary_text;
+    margin:0 10px;
+    padding: 5px 20px;
+    border-radius: 10px;
+ }
+
+ .button_main{
+     background: $button_main;
+ }
+
+
+
+@media(max-width:850px){
+    .chain{
+        width: 100% !important;
+        margin-top: 30px;
+        padding: 20px 20px;
+        font-size: 18px;
+    }
+
+    .hide_button{
+        display: block;
+    }
+
+    .lg-button{
+        display: none;
+    }
+
+    .deposit{
+        display: none;
+    }
+}
+
+
+@media(max-width:450px){
+    .chain{
+       
+        font-size:15px;
+
+    }
+}

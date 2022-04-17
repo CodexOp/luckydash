@@ -1,0 +1,184 @@
+@import '../../index.scss';
+
+
+*{
+box-sizing: border-box;
+}
+
+
+.dashboard_outer{
+    width: 80%;
+    margin:auto;
+}
+
+
+.heading{
+    font-size:45px;
+    background: $gradient_text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: bold;  
+    padding: 0;
+    margin: 0; 
+    line-height: 75px;
+    padding-top: 50px;
+}
+
+.subheading{
+    color: #F6C343;
+    font-size: 22px;
+}
+
+
+.description{
+    color: $secondary_text;
+    font-size: 22px;
+
+}
+
+
+.dashboard_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+.box_outer{
+    width: 32%;
+    background-color: $background;
+    box-shadow: 0px 12px 51px 4px #171139;
+    border: 1px solid $border_box;
+    border-radius: 10px;
+    padding: 35px 0 35px 30px;
+}
+
+.box_title, .title_dash{
+color: $secondary_text;
+font-size: 18px;
+}
+
+.box_value, .title_value{
+    color:$blue_text;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+
+.single_box{
+    width: 100%;
+    background-color: $background;
+    box-shadow: 0px 12px 51px 4px #171139;
+    border: 1px solid $border_box;
+    border-radius: 10px;
+    padding: 35px 30px 35px 30px;
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
+
+}
+
+.internal_box{
+    width: 33% !important;
+    color: #fff;
+    margin: 15px 0;
+    text-align: center;
+
+}
+
+@media(max-width:1200px){
+  
+
+.heading{
+    font-size: 42px !important;
+    line-height: 55px !important;
+}
+
+.subheading{
+    font-size: 20px;
+}
+
+
+
+
+.description{
+    font-size: 20px;
+
+}
+
+}
+
+
+@media(max-width:850px){
+    .box_outer{
+        width: 100%;
+        padding: 35px 0 35px 30px;
+        margin-top: 30px;
+
+    }
+
+    .dashboard_box{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .internal_box{
+        width: 50% !important;
+        color: #fff;
+        margin: 15px 0;
+        text-align: center;
+    
+    }
+    
+}
+
+
+@media(max-width:550px){
+     
+     .heading{
+         font-size:32px !important;
+         line-height: 45px !important;
+     }
+
+     .subheading{
+        font-size: 18px;
+    }
+    
+    
+    .description{
+        font-size: 18px;
+    
+    }
+
+    .internal_box{
+        width: 100% !important;
+        color: #fff;
+        margin: 15px 0;
+        text-align: center;
+    
+    }
+    
+    
+    }
+
+    @media(max-width:400px){
+
+     .landing_heading{
+        font-size:28px !important;
+        line-height: 40px !important;
+    }
+    
+    .subheading{
+        font-size: 16px;
+    }
+    
+    
+    .description{
+        font-size: 16px;
+    
+    }
+}

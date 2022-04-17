@@ -1,0 +1,152 @@
+@import '../../index.scss';
+
+.navbar_outer{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid $line;
+
+    .slider_logo{
+        display: none;
+        
+    }
+    
+
+    .navigations_active{
+        border-bottom: 2px solid $blue_text;
+        transition: all 0.3s ease-in-out;
+    }
+
+ ul{
+    display: flex;
+
+    li{
+        color:$primary_text;
+        margin:0 5px;
+        padding: 5px 10px;
+    }
+ }
+
+
+ .navbar_right, .navbar_left{
+     display: flex;
+     z-index: 100000;
+ }
+
+
+ .button{
+    color:$primary_text;
+    margin:0 10px;
+    padding: 5px 20px;
+    border-radius: 10px;
+ }
+
+ .button_main{
+     background: $button_main;
+ }
+
+
+ .showMenu{
+     left:-100% !important;
+ }
+
+
+ .button_secondary{
+     border:1px solid $blue_text;
+ }
+
+ .logo{
+     width: 150px;
+     margin-top: 5px;
+     height: 85px;
+ }
+
+ .position_change{
+     right: -20px;
+     top:30px;
+     border:1px solid $blue_text;
+ }
+
+ 
+
+ .connect_logo{
+     width: 25px;
+ }
+ 
+ .menu_icon{
+     color: $primary_text !important;
+     width: 30px;
+     display: none;
+
+ }
+}
+
+
+
+
+@media (max-width:850px){
+.ul_nav{
+    display: flex !important;
+    flex-direction: column; 
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(20px);
+    z-index: 10;  
+}
+
+.slider_logo{
+    display: flex !important;
+}
+
+.ul_nav{
+    position: fixed;
+    height: 100vh;
+    line-height: 50px;
+    top:0px;
+    padding-top: 20px;
+    left: 0;
+    width: 60%;
+    padding-left: 40px;
+    transition: all 0.3s ease-in-out;
+    border-right: 1px solid $blue_text !important;
+
+
+}
+
+.menu_icon{
+    display: block !important;
+}
+
+
+}
+
+
+@media(max-width:500px){
+    .button_secondary{
+        display: none;
+    }
+
+    .button{
+        color:$primary_text;
+        padding: 5px 10px !important;
+        border-radius: 10px;
+        font-size: 13px;
+     }
+
+     .logo{
+         width: 130px !important;
+     }
+
+     .downicon{
+         display: none !important;
+     }
+}
+
+
+@media (min-width:850px){
+    .slider_logo{
+        display: none !important;
+    }
+}
+

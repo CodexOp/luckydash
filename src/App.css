@@ -1,0 +1,89 @@
+.wrapper2, .wrapper1{
+    width: 400px;
+    position: absolute;
+    z-index: -1 !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+iframe{
+    display: none;
+}
+
+
+.button_main{
+    font-weight: 600;
+}
+
+input{
+    border:0;
+}
+
+.percentage_button {
+    background: none;
+}
+
+.title_calculator h3{
+    font-weight: 400 !important;
+}
+
+
+.earnbutt2{
+    background: transparent;
+}
+
+.button_secondary{
+    background: none;
+}
+
+@keyframes pulse {
+    0%{
+        top:-30px
+    }
+
+    50%{
+        top:-5px
+    }
+
+    100%{
+        top:-30px;
+    }
+}
+
+@keyframes pulse2 {
+    0%{
+        left:-30px
+    }
+
+    50%{
+        left:-5px
+    }
+
+    100%{
+        left:-30px;
+    }
+}
+
+
+.wrapper1{
+    top:0;
+    left: 50%;
+    animation:  pulse 4s infinite;
+
+}
+
+.wrapper2{
+    bottom:0;
+    left: 0;
+    animation:  pulse2 3s infinite;
+
+}

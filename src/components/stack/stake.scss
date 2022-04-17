@@ -1,0 +1,94 @@
+@import '../../index.scss';
+
+.stake_content{
+    width: 100% !important;
+    border: 1px solid #6F8498;
+}
+
+
+.stake_box{
+    display: flex;
+    margin: 40px 0;
+    gap:20px;
+}
+
+.comingsoon{
+    color: #fff;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 32px;
+}
+
+
+.left_box{
+    width: 60%;
+}
+
+.right_box{
+    width: 40%;
+}
+
+.warn_calc_stake p{
+    color: $secondary_text;
+    border-top: 1px solid $border_box;
+    margin-top: 15px;
+    padding: 15px 0;
+
+}
+
+.total_info{
+    display: flex;
+    color: $secondary_text;
+    justify-content: space-between;
+    font-size: 20px;
+    border-top: 1px solid $border_box;
+    margin-top: 10px;
+
+    p{
+        margin-top: 10px;
+
+    }
+}
+
+
+
+.warn_stake p{
+    color: $secondary_text;
+    border-top: 1px solid $border_box;
+    margin-top: 15px;
+    padding: 15px 25px;
+}
+
+.stake_inner{
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px 25px;
+}
+
+
+.stake_info_box{
+    padding: 20px 25px;
+
+}
+
+.stake_info{
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+    p{
+        color: $secondary_text;
+        font-size: 20px;
+    }
+}
+
+
+@media(max-width:850px){
+
+    .stake_box{
+        flex-direction:column;
+    }
+
+    .right_box, .left_box{
+        width: 100%;
+    }
+}

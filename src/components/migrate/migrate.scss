@@ -1,0 +1,167 @@
+@import '../../index.scss';
+
+
+
+.migrate_outer{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px !important;
+    background: #000;
+    box-shadow: 0px 0px 70px 25px #171139;
+    border-radius: 10px;
+    border: 1px solid #161522;
+    padding-bottom: 40px;
+
+    .input_max{
+        display: flex;
+        
+    }
+
+    .input_calculator{
+        width: 100%;
+        outline: none;
+        background: $input_field_color;
+        color:$secondary_text;
+        padding: 0 10px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .flex_max{
+        width: 80% !important;
+        border-radius: 10px 0 0 10px !important;
+    }
+
+    .max{
+        width: 20% !important;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border:2px solid $input_field_color;
+        border-radius: 0 10px 10px 0 !important;
+
+        h3{
+            color: $secondary_text;
+        }
+    }
+
+
+    .calculator_content{
+        width: 85%;
+        margin:auto;
+    }
+
+    
+.info{
+    color:$secondary_text;
+}
+
+.purple{
+    color: $purple_text;
+    margin-top: 20px;
+}
+
+
+.input_label{
+    color: $primary_text;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.info_calculator{
+    margin-top: 30px;
+}
+
+.right_info:nth-child(2){
+    color: $purple_text;
+    text-align: end;
+
+    margin-bottom: 10px;
+}
+
+.input_button{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.percentage_button{
+    border: 2px solid $input_field_color;
+    color: #fff;
+    width: 24%;
+    padding: 5px 0;
+    transition: all 0.3s ease-in-out; 
+
+}
+
+.percentage_button:hover{
+    background-color:$input_field_color ;
+}
+
+
+.active{
+    background: $input_field_color ;
+}
+
+.title_calculator{
+    margin-top: 20px;
+}
+
+
+.calculator_title h2{
+        padding: 10px 20px;
+        border-bottom: 1px solid $line;
+        font-size: 18px;
+        background: $gradient_text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        font-weight: bold;   
+}
+
+.button_main{
+    background: $button_main;
+}
+
+.earn_button{
+    width: 20%;
+    height: 35px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: $primary_text;
+    font-weight: bold;
+    margin-top:20px;
+}
+
+.earnbutt2{
+    border:1px solid $blue_text;
+}
+
+.earn_butt23{
+    margin-left: 20px;
+}
+
+
+.info1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.green{
+    color: $green_color;
+}
+
+}
+
+
+@media(max-width:800px){
+    .migrate_outer{
+        width: 90%;
+        
+    }
+
+    .earn_button{
+        width: 40% !important;
+    }
+}

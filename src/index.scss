@@ -1,0 +1,27 @@
+$primary_text: rgba(255,255,255,1);
+$secondary_text: rgba(255,255,255,0.7);;
+$blue_text: #51ADE5;
+$purple_text: #625E95;
+$gradient_text:  linear-gradient(90deg, #83EAF1 2.75%, #63A4FF 69.41%);
+$input_field_color: #161522;
+$green_color: #00D97F;
+$background:#080808;
+$button_main:linear-gradient(90deg, #48C3EB 2.75%, #718EDD 69.41%);
+$line:rgba(255, 255, 255, 0.2);
+$border_box:#6F8498;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background: $background;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
