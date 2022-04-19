@@ -26,7 +26,9 @@ const Button = () => {
         walletconnect: {
           package: WalletConnectProvider, // required
           options: {
-            infuraId: "INFURA_ID" // required
+            rpc: {
+              56: values.rpcUrl
+            } // required
           }
           // coinbasewallet: {
           //   package: "CoinbaseWalletSDK", // Required
@@ -112,8 +114,10 @@ const Button = () => {
         return classes.filter(Boolean).join(' ')
       }
   return (
-    <button className='button button_main'>
-      Connect
+    <button className='button button_main' onClick= {connectWallet} >
+      {(connectedWallet)? <>{walletAddress.slice(0, 6) + "..."}</>
+      :
+      <>Connect</>}
              </button>
   )
 }

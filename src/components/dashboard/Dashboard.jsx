@@ -32,6 +32,7 @@ const Dashboard = () => {
           setAddress(_address);
           let _balance = await _getBalance(values.token);
           setBalance(_balance);
+          console.log ("Bapu Balance: ", _balance);
           let _bnbBalance = await _provider.getBalance(_address);
           setBnbBalance(parseFloat(ethers.utils.formatEther(_bnbBalance)));
           getBnbPrice();
@@ -105,7 +106,7 @@ const Dashboard = () => {
       let balance = await token.balanceOf (walletAddress);
       let decimals = await token.decimals();
       decimals = parseInt(decimals.toString());
-      balance = ethers.utils.formatEther(balance, decimals);
+      balance = ethers.utils.formatUnits(balance, decimals);
       console.log ("balance", balance.toString());
       return parseFloat(balance.toString()).toFixed(2);
     } catch (err){
